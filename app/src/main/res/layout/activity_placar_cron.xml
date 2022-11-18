@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD1D1"
+    android:backgroundTint="#FAFFD1"
+    tools:context=".PlacarActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1169dp"
+        android:layout_height="842dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        app:srcCompat="@drawable/ce7336203a60118fa487e268ca7ec020"
+        android:contentDescription="TODO" />
+
+    <Button
+        android:id="@+id/btSalvarPlacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#0D7E00"
+        android:onClick="saveGame"
+        android:shadowColor="#000000"
+        android:text="Salvar Placar"
+        app:layout_constraintStart_toEndOf="@+id/btVerJogos"
+        app:layout_constraintTop_toBottomOf="@+id/resetar" />
+
+    <Button
+        android:id="@+id/comecar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#4657AA"
+        android:onClick="saveGame"
+        android:text="Começar"
+        app:layout_constraintStart_toStartOf="@+id/tvPlacarRed1"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarRed1" />
+
+    <Button
+        android:id="@+id/resetar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="#4657AA"
+        android:onClick="saveGame"
+        android:text="Resetar"
+        app:layout_constraintEnd_toEndOf="@+id/tvPlacarBlue"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarBlue" />
+
+    <TextView
+        android:id="@+id/tvPlacarRed1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:onClick="alteraPlacarRed"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FF5757"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCMmeter" />
+
+    <TextView
+        android:id="@+id/tvPlacarBlue"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="alteraPlacarBlue"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#0099FF"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCMmeter" />
+
+    <!--on below line we are creating a
+        button to create a chronometer-->
+    <TextView
+        android:id="@+id/tvNomePartida2"
+        android:layout_width="358dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:text="@string/partida"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btVerJogos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#710000"
+        android:onClick="stackCtrlZ"
+        android:text="Desfazer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comecar" />
+
+    <Chronometer
+        android:id="@+id/idCMmeter"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomePartida2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

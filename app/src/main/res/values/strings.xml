@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Placar de Futebol</string>
+    <string name="title_activity_backupactivity">backupactivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="salvar_placar">Salvar Placar</string>
+    <string name="_0">0</string>
+    <string name="desfazer">Desfazer</string>
+    <string name="todo">TODO</string>
+    <string name="partida">Partida</string>
+    <string name="name">Name</string>
+    <string name="d_um_nome_a_partida">Dê um nome a partida</string>
+    <string name="possui_tempo_limite">Possui tempo limite?</string>
+    <string name="bora_jogar">Bora JOgar!</string>
+</resources>

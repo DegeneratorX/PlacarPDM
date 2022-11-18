@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacarActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="1169dp"
+        android:layout_height="842dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ce7336203a60118fa487e268ca7ec020"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/btSalvarPlacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#0D7E00"
+        android:onClick="saveGame"
+        android:text="@string/salvar_placar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPlacarRed"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="264dp"
+        android:onClick="alteraPlacarRed"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="#FF5757"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btVerJogos"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPlacarBlue"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="264dp"
+        android:onClick="alteraPlacarBlue"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#0099FF"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btSalvarPlacar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNomePartida2"
+        android:layout_width="347dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="190dp"
+        android:fontFamily="casual"
+        android:text="Partida"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvPlacarRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btVerJogos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#710000"
+        android:onClick="stackCtrlZ"
+        android:text="@string/desfazer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
